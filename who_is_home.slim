@@ -1,0 +1,11 @@
+.who-is-home data-data="#{WidgetDatum.find('who_is_home').data.to_json}"
+  .title
+    | Wer ist zu Hause?
+  ul.fa-ul.people
+    | {{#people}}
+    li
+      i.fa-li.fa class='fa-{{status_icon}}'
+      img src='http://gravatar.com/avatar/{{gravatar_hash}}?default=identicon' alt='Gravatar'
+      span.name
+        | {{name}}
+    | {{/people}}

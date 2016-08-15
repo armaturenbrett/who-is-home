@@ -1,0 +1,22 @@
+.who-is-home {
+  ul {
+    margin-top: 1rem;
+
+    li {
+      text-align: left;
+      height: 3vw;
+
+      img {
+        border-radius: 2vw;
+        display: inline-block;
+        height: 2vw;
+        margin: 0 1rem 0 0;
+        vertical-align: middle;
+      }
+
+      .name {
+        font-size: 75%;
+      }
+    }
+  }
+}

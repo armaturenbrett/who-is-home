@@ -1,0 +1,8 @@
+who_is_home:
+  people:
+    - email: 'john@example.com'
+      smartphone_hostname: 'sp-john'
+      name: 'John Doe'
+    - email: 'jane@example.com'
+      smartphone_hostname: 'sp-jane'
+      name: 'Jane Doe'
