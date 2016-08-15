@@ -1,8 +1,6 @@
 require 'timeout'
 require 'socket'
 
-PEOPLE = YAML.load_file("#{Rails.root.to_s}/config/widgets/who_is_home.yml")['who_is_home']['people']
-
 def ping(host)
   begin
     Timeout.timeout(5) do 
@@ -20,7 +18,7 @@ end
 $widget_scheduler.every '30s', first_in: '5s' do
   data = { people: [] }
 
-  PEOPLE.each do |person|
+  $config['who_is_home']['people'].each do |person|
     data[:people] << {
       gravatar_hash: Digest::MD5.new.update(person['email']).to_s,
       name: person['name'],
