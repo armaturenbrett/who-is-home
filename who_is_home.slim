@@ -1,6 +1,6 @@
 .who-is-home data-data="#{WidgetDatum.find('who_is_home').data.to_json}"
   .title
-    | Wer ist zu Hause?
+    = t('who_is_home.title')
   ul.fa-ul.people
     | {{#people}}
     li
