@@ -1,4 +1,4 @@
-who_is_home:
+who-is-home:
   people:
     - email: 'john@example.com'
       smartphone_hostname: 'sp-john'

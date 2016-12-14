@@ -18,7 +18,7 @@ end
 $widget_scheduler.every '30s', first_in: '5s' do
   data = { people: [] }
 
-  $config['who_is_home']['people'].each do |person|
+  $config['who-is-home']['people'].each do |person|
     data[:people] << {
       gravatar_hash: Digest::MD5.new.update(person['email']).to_s,
       name: person['name'],
@@ -26,5 +26,5 @@ $widget_scheduler.every '30s', first_in: '5s' do
     }
   end
 
-  WidgetDatum.new(name: 'who_is_home', data: data).save
+  WidgetDatum.new(name: 'who-is-home', data: data).save
 end
