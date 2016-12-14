@@ -1,3 +1,3 @@
 # Who is home widget
 
-![](who_is_home.png)
+![](who-is-home.png)
